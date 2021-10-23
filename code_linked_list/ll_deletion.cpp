@@ -28,6 +28,8 @@ void deleteNode(Node** head_ref, int data){
     if(temp == NULL)
         return;
 
+    // traverse and locate the node to be deleted, store the previous node, once 
+    // found, delete the node and set next of prev to be next->temp
     while(temp != NULL){
         if(temp->data == data){
             if(temp == *head_ref)
