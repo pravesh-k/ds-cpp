@@ -22,8 +22,8 @@ void printList(Node* n){
 // Function to delete a node when prev_node is provided
 void deleteNode(Node** head_ref, int data){
 
-    Node* temp = *head_ref;
-    Node* prev = NULL;
+    Node* temp = *head_ref;     // variables to store the current node and 
+    Node* prev = NULL;          // the node previous to the current node
 
     if(temp == NULL)
         return;
